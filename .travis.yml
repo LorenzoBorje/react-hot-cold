@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: ohyeJVS+XmrcPL5MLoGA8jYKqyZzO8EX0pg7U/FFycHPxEB8JxRsEmwUhWGEv+YaEGRxnUVMSY3aw7jlEy9V96QBqvea+DW51dNyxZePvKAPHfKSSzxJKbvdpNvv0GEzNGURDuMgI2cRQiVNbCBnJSYlNVLMY3vrMgRP6g8RnOWoeKU+nmFn85bbBaEDtTqAUQrWtIZ0cdePrpvi1Idrysw1B3MNEqO0XoaNH3Z/z7Yzsto3omPeHeCMRE8OK2nlbSo3sbZMHmRf7M8jpkQDuFxd3i+wMi2ocjvBsne6aEiqdK3XHyDB59lmhc4XfUozAs2UW/6hHj010dvcQY36xQuM6pIp/1NULUUGBPAEZuTf4jonM2b8zP6Gc/j4Io1Ogg8K7M1+5tjMhIKsKC5Tw552gRvRRFZy4EPMVyUPVLbmurvafgVJE7fgcOl6L0EQEK4WbFzIuH0tDxRWEqCWwexrjOq/dXOEa2rjS4nfVCyVPFYZ0yRT0fqiY7UZRL5pCBjoZV24E1ZswCvbgpAKUVRMNVrmsIipriAbaP4EUoKIW7+QPWuuSP4c7YGXjcWHrC36PFtsuIWTL6AOQbgzwerNC3vSDQyt1ck2q4nNawPVk6ihLqFU+Ygx6S0FZoMTZG690/Ul2Bx4h+O9KdSkIUNSKIsIGqVK3UJAdYNGtKk=
+  app: serene-ridge-79526
+  on:
+    repo: LorenzoBorje/react-hot-cold
